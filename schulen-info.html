@@ -1,5 +1,20 @@
-<ul>
-  <li>id_20_k_tid_1004_idx.html</li>
+<html>
+    <head>
+        <title>MooExample</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#sortable1 > li").click(function() {
+                    alert(get("raw/"+$(this).html()));
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <ol id="sortable1" class="connectedSortable ui-sortable">
+          
+              <li>id_20_k_tid_1004_idx.html</li>
   <li>id_20_k_tid_1004_schule.html</li>
   <li>id_20_k_tid_1014_idx.html</li>
   <li>id_20_k_tid_1014_schule.html</li>
@@ -1609,4 +1624,7 @@
   <li>id_7_PHPSESSID_tegrcf8dago7ak76o7ba32hje6_idx.html</li>
   <li>id_7_PHPSESSID_tegrcf8dago7ak76o7ba32hje6_schule.html</li>
   <li>id_7_schule.html</li>
-</ul>
+
+        </ol>
+    </body>
+</html>
