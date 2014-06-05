@@ -5,14 +5,14 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#sortable1 > li").click(function() {
-                    $("#container").html($.get("http://santex.github.io/wire-schulen-sachsen/raw/"+$(this).html()));
+                    $("#container").append($.get("http://santex.github.io/wire-schulen-sachsen/raw/"+$(this).html()));
                 });
             });
         </script>
     </head>
 
     <body>
-
+                                          <div id="container"></div>  
       <ol id="sortable1" class="connectedSortable ui-sortable">
           
               <li>id_20_k_tid_1004_idx.html</li>
@@ -1627,6 +1627,6 @@
   <li>id_7_schule.html</li>
 
         </ol>
-        <div id="container"></div>  
+        
     </body>
 </html>
