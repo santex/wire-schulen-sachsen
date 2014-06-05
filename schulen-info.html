@@ -5,7 +5,7 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#sortable1 > li").click(function() {
-                    $("#container").append($.get("http://santex.github.io/wire-schulen-sachsen/raw/"+$(this).html()));
+                    $("#container").html($.get("http://santex.github.io/wire-schulen-sachsen/raw/"+$(this).html()));
                 });
             });
         </script>
