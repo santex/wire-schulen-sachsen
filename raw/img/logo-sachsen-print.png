@@ -1,0 +1,132 @@
+
+<?xml version="1.0" encoding="iso-8859-15"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head><title>Die Sächsische Schuldatenbank</title>
+<meta name="DC.subject" content="Schuldatenbank Sachsen" />
+<meta name="date" content="2012-01-20" />
+<meta name="publisher" content="SMK" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-15" />
+<meta name="keywords" lang="de" content="Datenbank Bildungseinrichtungen Schuldatenbank Sachsen" />
+<meta name="description" lang="de" content="Datenbank Bildungseinrichtungen in Sachsen" />
+<meta name="robots" content="index, follow" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" type="text/css" href="css/chrome.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="css/blau2.css" media="screen, projection, print" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" title="print" />
+<link rel="stylesheet" type="text/css" href="css/handheld.css" media="handheld" title="handheld" />
+<link rel="stylesheet" type="text/css" href="css/ssdb.css" media="screen, projection" />
+<!-- CSS und JavaScripts für Accordion Effekt //-->
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript">
+/*jQuery Script*/
+$(document).ready( function() {
+$('.toggle_container').hide();
+//Der fehlerhafte Container wird hier geöffnet
+var fehler = $('H3:contains(Fehler!)');
+    if (fehler)
+    {fehler.next('.toggle_container').slideToggle('slow');}
+///////////////////////////////////////////////////////////   
+$('.trigger').click( function() {
+        var trig = $(this);
+        if ( trig.hasClass('trigger_active') ) {
+
+    trig.next('.toggle_container').slideToggle('slow');
+                trig.removeClass('trigger_active');
+                }
+    else {
+      $('.trigger_active').next('.toggle_container').slideToggle('slow');
+      $('.trigger_active').removeClass('trigger_active');
+      trig.next('.toggle_container').slideToggle('slow');
+                  trig.addClass('trigger_active');
+                  };
+          return false;
+          });
+    });
+</script><script type="text/javascript">
+//<![CDATA[
+   function jump (select) {
+    for (i = 0; i < select.length; ++i) {
+     if (select.options[i].selected == true) {
+           self.location.href = select.options[i].value;}
+    }
+   }
+//]]>
+</script></head><body id="portal"><div id="wrapper">
+		<ol class="jump">
+			<li><a href="#navigation">Navigation</a></li>
+			<li><a href="#inhalt">Inhalt</a></li>
+			<li><a href="#herausgeber">Herausgeber</a></li>
+		</ol>
+		<a name="top" id="top"></a>
+
+		<div id="header">
+			<div id="metanav">
+				<script type="text/javascript" src="https://search.sachsen.de/verity-sachsen/suche/common/js/basicQuery.js"></script>
+				<ul>
+					<li><a href="index.php?id=2">Übersicht</a></li>
+					<li><a href="index.php?id=35">Kontakt</a></li>
+					<li><a href="http://www.sachsen-macht-schule.de/smk/1245.htm">Impressum</a></li>
+					<li><a href="http://www.sachsen.de/datenschutz.html">Datenschutz</a></li>
+					<li><a href="http://www.sachsen-macht-schule.de/smk/4245.htm">eSignatur</a></li>
+					<li class="search"><form id="formBasicQueryHead" action="http://search.sachsen.de/verity-sachsen/suche/pages/search/basic.jsp" method="get" onsubmit="generateQueryHead();">
+							<input type="hidden" name="QuerySubmit" value="true" />
+							<input type="hidden" name="Page" value="1" />
+							<input type="hidden" name="QueryText" value="" />
+							<input type="hidden" name="LastQuery" value="" />
+							<input type="hidden" name="AdvQueryText" id="AdvQueryTextHead" value="" />
+							<input type="hidden" name="hiddenOriginalQueryText" id="hiddenOriginalQueryTextHead" value="" />
+							<input type="hidden" name="hiddenBasicQueryText" id="hiddenBasicQueryTextHead" value="" />
+							<input type="hidden" name="VLang" id="VLangHead" value="de" />
+							<input type="hidden" name="GUILang" id="GUILangHead" value="de" />
+							<input type="hidden" name="collections" id="collectionsHead" value="" />
+							<input type="text" name="TextInput" id="myTerm" title="Suche auf sachsen.de" /><input type="submit" name="send" id="submitHead" value="Suchen" />
+						</form>
+					</li>
+				</ul>
+			</div><div id="head2"><img src="img/logo-sachsen-print.png" alt="" /><h2>sachsen.de</h2><div class="fixfloat"></div></div>
+			<div id="head">
+				<div id="headL"><a href="http://www.sachsen.de"><img src="img/logo_sachsen.gif" alt="Verweis zu sachsen.de" title="Verweis zu sachsen.de" /></a></div>
+				<span><a href="index.php">Sächsische Schuldatenbank - Schulporträt</a></span>
+			</div></div><div id="contentarea"><div id="navi">
+<h2 id="navigation"><a name="hauptnavigation" id="hauptnavigation">Navigation</a></h2>
+<div class="breadcrumbs">
+<ul>
+<li><a href="http://www.sachsen.de"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />sachsen.de <img src="symbole/portal.gif" alt="[Portal]" height="12" width="7" /></a></li>
+<li><a href="http://www.sachsen-macht-schule.de/schule/index.htm"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Bildung <img src="symbole/portal.gif" alt="[Portal]" height="12" width="7" /></a></li>
+</ul></div><div class="menu"><h3><a href="http://www.sachsen-macht-schule.de/schule/18.htm"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Schulen und Bildungswege <img src="symbole/portal.gif" alt="[Portal]" height="12" width="7" /></a></h3><ul><li class="linkactive"><img src="symbole/vanstrich_open.gif" alt="aktuelle Seite ist" height="12" width="16" />Schuldatenbank<ul><li><a href="/index.php?id=2"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Suche von Einrichtungen</a></li><li><a href="/index.php?id=7"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Projektpartner</a></li><li><a href="/index.php?id=8"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Historie</a></li><li><a href="/index.php?id=35"><img src="symbole/vanstrich.gif" alt="" height="12" width="16" />Hilfe / Kontakt</a></li></ul></li></ul></div><div class="box"><a name="login" id="login"></a>
+
+<h3>Anmeldung</h3><p>Zur Dateneingabe können Sie sich hier</p>
+<ul>
+<li><a href="index.php?id=48"><img src="symbole/vanstrich.gif" alt="Anmelden" height="12" width="16" />Anmelden</a></li>
+</ul></div></div><div id="illu"><img src="img/ssdb_titel_portal.png" alt="Illustration: Portalgrafik &quot;Schuldatenbank&quot;" border="0" height="200" width="664" /></div><div id="content"><a name="inhalt" id="inhalt">Inhalt</a><h1>Die Sächsische Schuldatenbank</h1><div><h2>Die Datenbank sächsischer Bildungseinrichtungen</h2>
+<p>Das Projekt Datenbank sächsischer Bildungseinrichtungen betreuen die Kooperationspartner Technische Universität Dresden, Sächsisches Staatsministerium für Kultus sowie Statistisches Landesamt des Freistaates Sachsen.</p>
+<h3>News:</h3>
+<p>Ab dem 15.01.2013 ist das Schulporträt in die Schuldatenbank integriert. Bei allen Einrichtungen mit Schulporträt, wird das Datenblatt mit Schulporträt angezeigt.</p>
+<p>Die Schüler- und Lehrerstatistikdaten der Amtlichen Schulstatistik werden ab 2011/12 in die Datenbank zum Schulporträt eingelesen und angezeigt.</p>
+<p>Ab 01.09.2009 steht den öffentlichen Berufsbildenden Schulen die <!-- <a href="http://www-db.sn.schule.de/input">Dateneingabe</a> -->Dateneingabe zum Schulporträt zur Verfügung. Die Ausgabe der Schulporträts Berufsbildender Schulen ist ab dem 01.10.2009 freigeschaltet. Damit sind nun für alle öffentlichen sächsischen Schulen Schulporträts erreichbar.
+<!-- <br />
+<img src="symbole/vanstrich.gif" alt="Link" height="12" width="16" /><a href="http://www-db.sn.schule.de/output">Schulporträt</a>
+-->
+</p>
+<p>Mit Wirkung vom 17. Januar 2009 ist die Verwaltungsreform in Sachsen auch in der Schuldatenbank nachvollzogen. 157 Schulen sind nun einer neuen Regionalstelle der Sächsischen Bildungsagentur zugeordnet. Damit verbunden ist die Vergabe eines neuen Dienststellenschlüssels für diese Einrichtungen.</p>
+<p>Zum 01.12.2008 wurde in Kooperation mit dem Verkehrsverbund Oberelbe eine Fahrplanauskunft in das Datenblatt der Einrichtung eingebaut.</p>
+<p>Die Sächsische Schuldatenbank ist auf die Kreisgebietsreform ab 01.08.2008 umgestellt.</p>
+
+</div>
+<div class="fixfloat"></div><div class="linktop" id="linktop"><a href="#top"><img src="/symbole/vanstrich_hoch.gif" alt="" height="12" width="16" />zum Seitenanfang</a></div><div class="fixfloat"></div></div><div id="quickbar"><h2 id="marginal"><a name="marginalspalte" id="marginalspalte">Marginalspalte</a></h2><div class="box"><h3>Tag der offenen T&uuml;r</h3>
+<p><img src="img/tdot_03.png" alt="Tag der offenen Tï¿œr" border="0"></p>
+ <h3>Heute ist der 03.06.2014</h3><p> Es laden 108 Einrichtungen bis zum 18.07.2014 ein.<br /><br/> Schauen Sie sich alle Einrichtungen an, die ihren Tag der offenen T&uuml;r schon geplant haben.<br/><ul><li><img src="symbole/vanstrich.gif" alt="" height="12" width="16" /><a href="index.php?id=75">Anzeigen der Schulen</a></li></ul></p></div><div id="copy">© Sächsisches Staatsministerium für Kultus</div></div><div class="fixfloat"></div></div></div>
+<div id="footer">
+<dl>
+<dt>Herausgeber</dt>
+<dd><a href="http://www.smk.sachsen.de/">S&auml;chsisches Staatsministerium für Kultus</a></dd>
+<dt>Verwandte Portale</dt>
+<dd><a href="http://www.kita.sachsen.de">Kindertagespflege</a> <a href="http://www.schule.sachsen.de">Schule und Ausbildung</a> <a href="http://www.lehrerbildung.sachsen.de">Lehrerbildung</a> <a href="http://www.weiterbildung.sachsen.de">Allgemeine Weiterbildung</a></dd>
+</dl>
+</div> 
+
+
+
+</body></html>
